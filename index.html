@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BloodRadar — India's Real-time Voluntary Emergency Blood Network</title>
+  <meta name="description" content="BloodRadar connects critical patients directly with verified voluntary blood donors within a 10km radius in real-time. Zero middleman, 100% voluntary, NACO compliant.">
+  
+  <!-- Open Graph & Meta Tags -->
+  <meta property="og:title" content="BloodRadar — India's Real-time Emergency Blood Network">
+  <meta property="og:description" content="Find compatible voluntary blood donors near you in minutes. 100% free, 100% voluntary, NACO compliant.">
+  <meta property="og:image" content="assets/images/app_mockup.jpg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#FF3B30">
+
+  <!-- Google Fonts: Outfit (800) + Inter (400, 500, 600, 700) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet & Icons -->
+  <link rel="stylesheet" href="css/styles.css?v=1.8">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/webp" href="assets/images/favicon.webp">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <img src="assets/images/red_transparent.webp" alt="BloodRadar Logo" width="38" height="38">
+        <span>BloodRadar</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#app-preview" class="nav-link">App Preview</a></li>
+        <li><a href="#compatibility" class="nav-link">Compatibility</a></li>
+        <li><a href="#safety" class="nav-link">Safety Rules</a></li>
+        <li><a href="privacy.html" class="nav-link">Privacy</a></li>
+      </ul>
+
+      <div class="nav-cta-group">
+        <a href="#download" class="btn-primary">Download App</a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-drawer" class="mobile-nav-drawer">
+    <ul class="mobile-nav-links">
+      <li><a href="#how-it-works" class="mobile-nav-link">How It Works</a></li>
+      <li><a href="#features" class="mobile-nav-link">Features</a></li>
+      <li><a href="#app-preview" class="mobile-nav-link">App Preview</a></li>
+      <li><a href="#compatibility" class="mobile-nav-link">Compatibility Calculator</a></li>
+      <li><a href="#safety" class="mobile-nav-link">Donor Safety Rules</a></li>
+      <li><a href="privacy.html" class="mobile-nav-link">Privacy Policy</a></li>
+      <li><a href="terms.html" class="mobile-nav-link">Terms of Service</a></li>
+    </ul>
+    <a href="#download" class="btn-primary" style="width: 100%;">Download BloodRadar Free</a>
+  </div>
+
+  <!-- Hero Section (Clean, Human, High Clarity) -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="text-highlight">Find Blood Donors</span> Near You in Minutes.
+        </h1>
+
+        <p class="hero-subtitle">
+          You may never need this app. But your father, mother, or best friend might — at 2am, with no one to call. Install once. Be ready forever.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#download" class="btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download App Free
+          </a>
+          <a href="#how-it-works" class="btn-secondary">
+            See How It Works
+          </a>
+        </div>
+
+        <div class="hero-store-row">
+          <span>Available on:</span>
+          <a href="#download" title="Google Play">
+            <img src="assets/badges/google-play-badge.svg" alt="Google Play" class="hero-store-badge">
+          </a>
+          <a href="#download" title="App Store">
+            <img src="assets/badges/app-store-badge.svg" alt="App Store" class="hero-store-badge">
+          </a>
+        </div>
+      </div>
+
+      <!-- Solid Apple-Grade Live Emergency SOS Card -->
+      <div class="hero-card-wrapper">
+        <div class="hero-live-card">
+          <!-- Card Top Header -->
+          <div class="card-status-bar">
+            <div class="status-indicator">
+              <span class="pulse-dot"></span>
+              <span class="status-text">Emergency Broadcast Active</span>
+            </div>
+            <div class="status-radius-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+              <span>10 km Radius</span>
+            </div>
+          </div>
+
+          <!-- Request Details Box -->
+          <div class="request-summary-box">
+            <div class="req-blood-badge">
+              <span class="blood-type">O+</span>
+              <span class="blood-label">URGENT</span>
+            </div>
+            <div class="req-info">
+              <div class="req-title">Emergency Blood Request</div>
+              <div class="req-hospital">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Apollo Hospital, Jubilee Hills • 1.8 km</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Matched Donors Section -->
+          <div class="matched-donors-section">
+            <div class="matched-header">
+              <span class="matched-title">STAGE 1: TRUSTED CONTACT MATCH</span>
+              <span class="matched-counter">2 Found</span>
+            </div>
+
+            <!-- Donor 1: Responded -->
+            <div class="donor-item confirmed">
+              <div class="donor-avatar">RK</div>
+              <div class="donor-details">
+                <div class="donor-name-row">
+                  <span class="donor-name">Dr. Rajesh K.</span>
+                  <span class="donor-relation-tag">Phone Contact</span>
+                </div>
+                <div class="donor-status-row">
+                  <span class="donor-distance">1.2 km away</span>
+                  <span class="donor-eta-badge">✓ Responded • 12 min ETA</span>
+                </div>
+              </div>
+              <div class="donor-action-btn" title="Call Donor (Masked Number)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+            </div>
+
+            <!-- Donor 2: Available -->
+            <div class="donor-item">
+              <div class="donor-avatar secondary">SV</div>
+              <div class="donor-details">
+                <div class="donor-name-row">
+                  <span class="donor-name">Sravan V.</span>
+                  <span class="donor-relation-tag">Colleague</span>
+                </div>
+                <div class="donor-status-row">
+                  <span class="donor-distance">3.4 km away</span>
+                  <span class="donor-standby-badge">Standby Available</span>
+                </div>
+              </div>
+              <div class="donor-action-btn secondary" title="Call Donor (Masked Number)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Solid Apple Security Bar -->
+          <div class="card-security-bar">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <span>100% Private Device Match • Masked Calling</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust & Metrics Banner -->
+  <section class="metrics-section">
+    <div class="container">
+      <div class="metrics-grid">
+        <div class="metric-item">
+          <div class="metric-number">10 km</div>
+          <div class="metric-label">Emergency Radius</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-number">100% Private</div>
+          <div class="metric-label">Your Contacts Stay On Your Phone</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-number">0 OTP</div>
+          <div class="metric-label">No Wait Time, No OTP Codes</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-number">100% Free</div>
+          <div class="metric-label">Voluntary &amp; Zero Ads</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- The Old Way vs BloodRadar -->
+  <section class="comparison-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">The Old Way vs. The BloodRadar Way</h2>
+        <p class="section-subtitle">Most people install this before an emergency — for someone they love. Here's why it changes everything.</p>
+      </div>
+
+      <div class="comparison-grid">
+        <!-- Old Way Card -->
+        <div class="comparison-card old-way">
+          <div class="card-header">
+            <div class="icon-wrapper alert-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <h3>The Old, Stressful Way</h3>
+          </div>
+          <ul class="comparison-list">
+            <li>
+              <span class="x-mark">✕</span>
+              <p><strong>Panic &amp; Confusion:</strong> Manually texting friends, family, and WhatsApp groups hoping someone replies.</p>
+            </li>
+            <li>
+              <span class="x-mark">✕</span>
+              <p><strong>Wasting Time:</strong> Searching websites for static numbers and calling strangers one by one, only to find they are unavailable.</p>
+            </li>
+            <li>
+              <span class="x-mark">✕</span>
+              <p><strong>High Tension:</strong> Blindly calling everyone in your contact list in an emergency, wasting precious time.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- BloodRadar Way Card -->
+        <div class="comparison-card new-way">
+          <div class="card-header">
+            <div class="icon-wrapper check-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3>The BloodRadar Way</h3>
+          </div>
+          <ul class="comparison-list">
+            <li>
+              <span class="check-mark">✓</span>
+              <p><strong>Instant Matching:</strong> You raise a request. We instantly find registered, eligible donors in your own contact list.</p>
+            </li>
+            <li>
+              <span class="check-mark">✓</span>
+              <p><strong>Zero Spam Calls:</strong> You get a clean list of people who have explicitly said "Yes, I will donate." You only call them.</p>
+            </li>
+            <li>
+              <span class="check-mark">✓</span>
+              <p><strong>City-Wide Backup:</strong> If no one in your contacts is available, we <strong>directly and instantly</strong> expand the search across your city—without waiting.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Privacy Note -->
+      <div class="privacy-note-card">
+        <div class="privacy-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <div class="privacy-text">
+          <strong>Your Privacy is Safe:</strong> To make this work, the app checks for matching donors. However, we never save, store, or steal your contacts' phone numbers. Your phonebook stays completely private and secure on your device. We use a secure method that guarantees your details are 100% safe.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2-Tier Emergency Pipeline -->
+  <section id="how-it-works" class="pipeline-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title light">How BloodRadar Finds Help Fast</h2>
+        <p class="section-subtitle light">A smart two-stage system designed to notify your trusted circle first, expanding across your city only when you need more help.</p>
+      </div>
+
+      <div class="pipeline-track-container">
+        <!-- Stage 1 -->
+        <div class="pipeline-step-card">
+          <div class="pipeline-step-header">
+            <span class="step-number-badge">STAGE 01</span>
+            <span class="pipeline-time-tag">0 – 10 Minutes</span>
+          </div>
+          <h3>Friends &amp; Family First</h3>
+          <p>When an emergency begins, BloodRadar privately checks your phone contacts to alert matching donors you already know. Your trusted circle is reached immediately without disturbing strangers.</p>
+          <ul class="pipeline-features-list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              100% private contact matching on your device
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Reaches trusted friends, relatives, and neighbors
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Automatically expands if help isn't found in 10 minutes
+            </li>
+          </ul>
+        </div>
+
+        <!-- Connected Bridge Indicator -->
+        <div class="pipeline-bridge">
+          <div class="pipeline-bridge-circle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </div>
+          <span class="pipeline-bridge-text">Auto Escalation</span>
+        </div>
+
+        <!-- Stage 2 -->
+        <div class="pipeline-step-card">
+          <div class="pipeline-step-header">
+            <span class="step-number-badge blue">STAGE 02</span>
+            <span class="pipeline-time-tag">10+ Mins / Critical ICU Need</span>
+          </div>
+          <h3>10km Citywide Broadcast</h3>
+          <p>If your contacts are unavailable or in critical ICU emergencies, BloodRadar instantly alerts verified matching donors within 10km of the hospital.</p>
+          <ul class="pipeline-features-list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Instant alerts sent directly to nearby voluntary donors
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Masked calling keeps your phone number private
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Alerts stop automatically once a donor arrives at the hospital
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Built for Real Emergencies</h2>
+        <p class="section-subtitle">Every detail is designed to save precious time and remove friction when a human life is on the line.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          </div>
+          <h3>10km Precise Radius</h3>
+          <p>Alerts only nearby donors around the hospital to ensure fast arrival during urgent trauma windows.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Complete Phone Privacy</h3>
+          <p>Your phone number stays encrypted and hidden. Calls are only connected when a donor agrees to help.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+          </div>
+          <h3>Rare Blood Group Network</h3>
+          <p>Dedicated matching for rare and universal blood types, including Bombay (hh) and Rh-null.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3>Instant 1-Tap Sign In</h3>
+          <p>Sign up in one second with zero OTP delays, so you're always ready before an emergency strikes.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Safe Recovery Tracker</h3>
+          <p>Protects donor health by enforcing official 90-day recovery intervals between donations.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          </div>
+          <h3>100% Free &amp; Voluntary</h3>
+          <p>Zero ads, zero fees, and no paid blood. Built purely to save lives through voluntary kindness.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- App Showcase Section -->
+  <section id="app-preview" class="showcase-section">
+    <div class="container">
+      <div class="showcase-grid">
+        <div class="showcase-content">
+          <h2>Works When Panic Sets In</h2>
+          <p class="lead-text">In an emergency, your hands shake and your mind goes blank. BloodRadar is designed so that even then, anyone can find help in seconds.</p>
+
+          <div class="showcase-points">
+            <div class="showcase-point-item">
+              <div class="showcase-point-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <h4>Private Contact Matching</h4>
+                <p>Instantly find willing, eligible donors from your own phonebook without spamming anyone.</p>
+              </div>
+            </div>
+
+            <div class="showcase-point-item">
+              <div class="showcase-point-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <h4>Expands City-Wide Automatically</h4>
+                <p>If no one in your contacts can help, the app silently expands to find a willing stranger nearby — no extra steps needed.</p>
+              </div>
+            </div>
+
+            <div class="showcase-point-item">
+              <div class="showcase-point-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <h4>Alerts That Wake You Up</h4>
+                <p>When your blood type is needed nearby, you get an urgent alert — even if your phone is on silent.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#download" class="btn-primary">Get the BloodRadar App</a>
+        </div>
+
+        <div class="showcase-visual">
+          <img src="assets/images/features.webp" alt="BloodRadar Mobile App Features" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Statement & Core Pledge -->
+  <section class="mission-section">
+    <div class="container">
+      <div class="mission-card">
+        <span class="mission-badge">OUR CORE PLEDGE</span>
+        <h2 class="mission-title">Human life is priceless.<br><span class="text-highlight">Saving it will always be free.</span></h2>
+        <p class="mission-desc">No subscriptions. No middleman charges. No commercial blood trading. Built purely to connect willing donors with critical patients when seconds matter most.</p>
+        <div class="mission-points">
+          <div class="mission-point">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>100% Voluntary</span>
+          </div>
+          <div class="mission-point">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Zero Ads &amp; Hidden Fees</span>
+          </div>
+          <div class="mission-point">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Strict NACO Compliance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blood Compatibility Calculator -->
+  <section id="compatibility" class="calculator-section">
+    <div class="container">
+      <div class="calc-card">
+        <div class="calc-header">
+          <h2>Blood Group Compatibility Guide</h2>
+          <p>Select any blood group to see who you can safely donate to and receive blood from:</p>
+        </div>
+
+        <div class="blood-selector-wrapper">
+          <div class="blood-selector-grid">
+            <button class="chip-btn active" data-bg="A+">A+</button>
+            <button class="chip-btn" data-bg="A-">A-</button>
+            <button class="chip-btn" data-bg="B+">B+</button>
+            <button class="chip-btn" data-bg="B-">B-</button>
+            <button class="chip-btn" data-bg="O+">O+</button>
+            <button class="chip-btn" data-bg="O-">O-</button>
+            <button class="chip-btn" data-bg="AB+">AB+</button>
+            <button class="chip-btn" data-bg="AB-">AB-</button>
+            <button class="chip-btn rare-type" data-bg="Bombay (hh)">Bombay (hh)</button>
+            <button class="chip-btn rare-type" data-bg="Rh-null">Rh-null</button>
+          </div>
+        </div>
+
+        <div class="compatibility-matrix">
+          <!-- Donate To -->
+          <div class="matrix-box donate-box">
+            <div class="matrix-box-header">
+              <div class="matrix-header-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF3B30" stroke-width="2.5"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+                <h4>You Can Donate Blood To:</h4>
+              </div>
+              <span id="donate-count-badge" class="matrix-count-badge red">2 Groups</span>
+            </div>
+            <div id="matrix-donate-list" class="matrix-chips-list">
+              <!-- Dynamically Populated -->
+            </div>
+          </div>
+
+          <!-- Receive From -->
+          <div class="matrix-box receive-box">
+            <div class="matrix-box-header">
+              <div class="matrix-header-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <h4>You Can Receive Blood From:</h4>
+              </div>
+              <span id="receive-count-badge" class="matrix-count-badge emerald">4 Groups</span>
+            </div>
+            <div id="matrix-receive-list" class="matrix-chips-list">
+              <!-- Dynamically Populated -->
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-note-box">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <span id="calc-note-text">As an A+ donor, you can help anyone with A+ and AB+ blood. You can receive blood from A+, A-, O+, and O-.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NACO Guidelines & Safety Section -->
+  <section id="safety" class="safety-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Who Can Donate Blood?</h2>
+        <p class="section-subtitle">Official safety standards from the National AIDS Control Organisation (NACO) to protect both donors and recipients.</p>
+      </div>
+
+      <div class="safety-grid">
+        <div class="safety-card">
+          <div class="safety-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h4>Age: 18 – 65 Years</h4>
+          <p>Donors should be between 18 and 65 years old and feeling healthy on the day of donation.</p>
+        </div>
+
+        <div class="safety-card">
+          <div class="safety-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M6 7l-4 7h8l-4-7z"/><path d="M18 7l-4 7h8l-4-7z"/><path d="M6 3h12"/></svg>
+          </div>
+          <h4>Minimum Weight: 45 kg</h4>
+          <p>A minimum weight of 45 kg ensures safe donation and a smooth, fast recovery.</p>
+        </div>
+
+        <div class="safety-card">
+          <div class="safety-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h4>90-Day Recovery Cooldown</h4>
+          <p>Wait 3 months (90 days) between donations to allow your body to naturally replenish healthy iron levels.</p>
+        </div>
+
+        <div class="safety-card">
+          <div class="safety-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+          </div>
+          <h4>Hemoglobin &gt; 12.5 g/dL</h4>
+          <p>A quick hemoglobin check (at least 12.5 g/dL) and normal blood pressure ensure you are fit to donate.</p>
+        </div>
+
+        <div class="safety-card">
+          <div class="safety-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+          </div>
+          <h4>Hospital Cross-Matching</h4>
+          <p>Every blood unit is tested and cross-matched by certified hospital blood banks before transfusion.</p>
+        </div>
+
+        <div class="safety-card">
+          <div class="safety-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h4>100% Unpaid &amp; Voluntary</h4>
+          <p>Donation must always be voluntary and unpaid. Buying or selling blood is strictly illegal under Indian law.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Badges Section -->
+  <section id="download" class="store-badges-section">
+    <div class="container">
+      <div class="store-card-container">
+        <h2>Install Once. Be Ready Forever.</h2>
+        <p>Setup takes under 60 seconds — just your name and blood group. Then forget about it. It works quietly in the background until the day someone you love needs it.</p>
+        <p style="margin-top: 8px; font-size: 0.9rem; opacity: 0.75;">📲 Share this with your family WhatsApp group. It costs nothing. It could save everything.</p>
+
+        <div class="badges-group">
+          <a href="#" title="Get it on Google Play">
+            <img src="assets/badges/google-play-badge.svg" alt="Get it on Google Play" class="badge-img">
+          </a>
+          <a href="#" title="Download on the App Store">
+            <img src="assets/badges/app-store-badge.svg" alt="Download on the App Store" class="badge-img">
+          </a>
+        </div>
+        <div class="store-compat-pill">100% Free Forever to Save Priceless Lives.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EvenTime-Inspired Compact Luxury Footer -->
+  <footer class="footer-compact">
+    <div class="container">
+      <div class="footer-top-row">
+        <!-- Brand & Tagline -->
+        <div class="footer-brand-block">
+          <a href="#" class="footer-brand-title">
+            <img src="assets/images/red_transparent.webp" alt="BloodRadar Logo" width="32" height="32">
+            <span>BloodRadar</span>
+          </a>
+          <p class="footer-tagline">India's real-time voluntary emergency blood network.</p>
+          <ul class="footer-nav-inline">
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- For any Queries -->
+        <div class="footer-queries-block">
+          <h4>For any Queries</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <a href="https://www.instagram.com/the_surfboard" target="_blank" rel="noopener noreferrer">Message us on Instagram</a>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Hyderabad, India</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Join the Family -->
+        <div class="footer-social-block">
+          <h4>Join the Family</h4>
+          <div class="footer-social-icons">
+            <a href="https://www.instagram.com/the_surfboard" class="social-circle-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.youtube.com/@the_surfboard?sub_confirmation=1" class="social-circle-btn" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Center Badge & Copyright -->
+      <div class="footer-divider-line">
+        <div class="made-with-badge">
+          Made with <span class="pulsing-heart">❤️</span> by <span class="sb-pill-icon">SB</span> The SurfBoard
+        </div>
+      </div>
+
+      <p class="footer-copyright-text">&copy; 2026 BloodRadar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Interactive Logic Engine -->
+  <script src="js/app.js"></script>
+</body>
+</html>

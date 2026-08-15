@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — BloodRadar Emergency Network</title>
+  <meta name="description" content="Official Privacy Policy and Truecaller OAuth verification details for BloodRadar — India's real-time voluntary emergency blood network.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet & Icons -->
+  <link rel="stylesheet" href="css/styles.css?v=1.8">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/webp" href="assets/images/favicon.webp">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/images/red_transparent.webp" alt="BloodRadar Logo" width="38" height="38">
+        <span>BloodRadar</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="index.html#features" class="nav-link">Features</a></li>
+        <li><a href="index.html#compatibility" class="nav-link">Compatibility</a></li>
+        <li><a href="index.html#safety" class="nav-link">NACO Guidelines</a></li>
+        <li><a href="terms.html" class="nav-link">Terms</a></li>
+      </ul>
+
+      <div class="nav-cta-group">
+        <a href="index.html" class="btn-primary">Back to Home</a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-drawer" class="mobile-nav-drawer">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="index.html#how-it-works" class="mobile-nav-link">How It Works</a></li>
+      <li><a href="index.html#features" class="mobile-nav-link">Features</a></li>
+      <li><a href="index.html#compatibility" class="mobile-nav-link">Compatibility Calculator</a></li>
+      <li><a href="index.html#safety" class="mobile-nav-link">NACO Guidelines</a></li>
+      <li><a href="terms.html" class="mobile-nav-link">Terms of Service</a></li>
+    </ul>
+    <a href="index.html" class="btn-primary" style="width: 100%;">Back to Home</a>
+  </div>
+
+  <!-- Page Header -->
+  <header class="legal-page-header">
+    <div class="container legal-header-box">
+      <div class="last-updated-text">Last Updated: August 15, 2026</div>
+      <h1>Privacy Policy &amp; Data Protection</h1>
+      <p style="color: #64748B; font-size: 18px;">Clear, transparent details on how we protect your privacy, encrypt your data, and verify phone numbers with Truecaller.</p>
+    </div>
+  </header>
+
+  <!-- Legal Body -->
+  <main class="legal-body">
+    <div class="container legal-content-container">
+      
+      <p>BloodRadar ("we", "our", or "the platform") is a non-commercial, voluntary emergency blood donor communication network operating in India. We are dedicated to maintaining the highest standards of user privacy, medical confidentiality, and data protection.</p>
+
+      <p>This Privacy Policy explains how information is collected, used, processed, and safeguarded when you use the BloodRadar mobile application and website, specifically addressing our integration with the official <strong>Truecaller SDK</strong>, location services, and address book hashing.</p>
+
+      <h2>1. Information We Collect</h2>
+      <p>To facilitate rapid, life-saving emergency matching while adhering to the principle of data minimization, we collect only strictly necessary data:</p>
+      
+      <ul>
+        <li><strong>Account Profile Data:</strong> Full Name, Blood Group (ABO and Rh type, including rare phenotypes like Bombay hh or Rh-null), Gender, and City/State.</li>
+        <li><strong>Verified Phone Number:</strong> Collected via Truecaller 1-Tap OAuth verification or SMS authentication. Used strictly for emergency donor contact and account identity.</li>
+        <li><strong>On-Demand Location (Hospital Emergency Geofence):</strong> GPS coordinates of the destination hospital when an emergency blood request is broadcast, and coarse city coordinates of donors to calculate the 10km proximity radius. <em>BloodRadar does NOT track background location when the app is closed.</em></li>
+        <li><strong>Cryptographic Contact Hashes (Stage 1 Address Book Broadcast):</strong> When you initiate an emergency request, phone numbers in your address book are hashed locally (SHA-256) on your device to match against registered compatible donors in your contact list. Raw address books are never uploaded or stored in plain text.</li>
+        <li><strong>Donation History &amp; Cooldown Timers:</strong> Date of last verified donation to enforce the mandatory 90-day recovery interval under National AIDS Control Organisation (NACO) guidelines.</li>
+      </ul>
+
+      <div class="legal-callout-box" id="truecaller">
+        <h4>Official Truecaller SDK Phone Verification &amp; Data Safety Declaration</h4>
+        <p>BloodRadar integrates the official Truecaller SDK to allow users to verify their mobile number with zero-OTP friction. This ensures instant account creation during time-critical medical emergencies without waiting for SMS delivery.</p>
+      </div>
+
+      <h2>2. Truecaller SDK Data Handling Compliance</h2>
+      <p>In strict compliance with Truecaller Developer Policies, Google Play Developer Requirements, and the Indian Digital Personal Data Protection (DPDP) Act 2023:</p>
+      <ul>
+        <li><strong>Zero Commercial Data Selling:</strong> We NEVER sell, lease, rent, trade, or monetize your Truecaller profile data, phone number, or name to third-party advertisers, data brokers, or marketing networks.</li>
+        <li><strong>Explicit User Consent:</strong> Truecaller authentication is triggered strictly upon your deliberate tap on the "Verify with Truecaller" button. No background profile extraction occurs.</li>
+        <li><strong>Encrypted Storage:</strong> Phone numbers obtained via Truecaller are stored in an encrypted database using AES-256 encryption at rest.</li>
+        <li><strong>Phone Number Masking &amp; Privacy:</strong> Your phone number is NEVER publicly displayed in search directories. It is only revealed to a verified requester after you explicitly accept an emergency blood broadcast.</li>
+      </ul>
+
+      <h2>3. How We Use Your Information</h2>
+      <p>All data processed by BloodRadar is used exclusively for life-saving emergency blood connectivity:</p>
+      <ul>
+        <li>To compute compatibility matching algorithms between patient requirements and donor blood groups.</li>
+        <li>To deliver high-priority push notifications (FCM) when an emergency occurs within a 10km radius of your city.</li>
+        <li>To enforce the 90-day NACO medical donation cooldown period to prevent premature blood donation.</li>
+        <li>To display anonymized real-time radar nodes on the active radar screen.</li>
+      </ul>
+
+      <h2>4. Non-Commercial &amp; Zero Ads Policy</h2>
+      <p>BloodRadar is 100% voluntary, unpaid, and non-commercial. Under the Drugs and Cosmetics Act and NACO guidelines, commercial trading or paid donation of human blood is illegal in India. BloodRadar contains zero third-party advertising SDKs, commercial trackers, or behavioral profiling mechanisms.</p>
+
+      <h2>5. Data Security Standards</h2>
+      <p>We implement enterprise-grade security controls to protect your health profile and identity:</p>
+      <ul>
+        <li><strong>Encryption in Transit:</strong> All communications between the mobile application, website, and servers are encrypted using TLS 1.3.</li>
+        <li><strong>Encryption at Rest:</strong> Database records and phone hashes are encrypted with AES-256.</li>
+        <li><strong>Role-Based Access:</strong> Production database access is strictly isolated and restricted under zero-trust access architecture.</li>
+      </ul>
+
+      <h2>6. Account Deletion &amp; Data Retention (DPDP Act 2023)</h2>
+      <p>Under the Indian Digital Personal Data Protection Act 2023 and global privacy standards, you maintain absolute control over your personal data:</p>
+      <ul>
+        <li><strong>Instant In-App Deletion:</strong> You can permanently delete your BloodRadar account at any time directly from <em>App Settings &gt; Account &gt; Delete My Account</em>.</li>
+        <li><strong>Permanent Purge:</strong> When you delete your account, your profile data, phone number, contact hashes, and donation logs are permanently wiped from active databases within 24 hours.</li>
+        <li><strong>No Residual Shadow Profiles:</strong> We do not retain ghost or shadow profiles following user deletion requests.</li>
+      </ul>
+
+      <h2>7. Grievance Officer &amp; Contact Information</h2>
+      <p>If you have any questions, feedback, or grievance requests regarding this Privacy Policy, Truecaller verification, or data rights, please contact our designated Data Protection &amp; Grievance Officer:</p>
+      
+      <div class="legal-callout-box emerald">
+        <h4>BloodRadar Data Protection Office</h4>
+        <p><strong>Email:</strong> <a href="mailto:privacy@bloodradar.org" style="color: var(--dark-slate); font-weight: 700; text-decoration: underline;">privacy@bloodradar.org</a></p>
+        <p><strong>Support Desk:</strong> <a href="mailto:support@bloodradar.org" style="color: var(--dark-slate); font-weight: 700; text-decoration: underline;">support@bloodradar.org</a></p>
+        <p style="margin-top: 6px; font-size: 13px; color: #475569;">BloodRadar Emergency Network — Hyderabad, Telangana, India.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- EvenTime-Inspired Footer -->
+  <footer class="footer-compact">
+    <div class="container">
+      <div class="footer-top-row">
+        <div class="footer-brand-block">
+          <a href="index.html" class="footer-brand-title">
+            <img src="assets/images/red_transparent.webp" alt="BloodRadar Logo" width="32" height="32">
+            <span>BloodRadar</span>
+          </a>
+          <p class="footer-tagline">India's real-time voluntary emergency blood network.</p>
+          <ul class="footer-nav-inline">
+            <li><a href="index.html#how-it-works">How It Works</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-queries-block">
+          <h4>For any Queries</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <a href="https://www.instagram.com/the_surfboard" target="_blank" rel="noopener noreferrer">Message us on Instagram</a>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Hyderabad, India</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-social-block">
+          <h4>Join the Family</h4>
+          <div class="footer-social-icons">
+            <a href="https://www.instagram.com/the_surfboard" class="social-circle-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.youtube.com/@the_surfboard?sub_confirmation=1" class="social-circle-btn" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-divider-line">
+        <div class="made-with-badge">
+          Made with <span class="pulsing-heart">❤️</span> by <span class="sb-pill-icon">SB</span> The SurfBoard
+        </div>
+      </div>
+
+      <p class="footer-copyright-text">&copy; 2026 BloodRadar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Interactive Logic Engine -->
+  <script src="js/app.js"></script>
+</body>
+</html>
